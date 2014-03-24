@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>PyDj Reverse İP</title>
+<script type="text/javascript" >
+function x()
+  {
+  window.open("http://umutcem.com",'_blank');
+  }
+  
+</script>
+</head>
+<body>
+
+<form method="POST" action="/">
+{% csrf_token %}
+
+<div id="reverse-name" style="float:left;margin-top:0;">Reverse:</div><div id="reverse-field" style="margin-top:0px; float:left;"><input name="reverse" class="reverse-go" title="reverse" value="" size="30" maxlength="2048" /></div>
+
+
+<input type="submit" value="GO !"  width="103" height="42" onclick="x()" /></a>
+
+</form>
+{% for kx in ke %}
+<b>	{{ kx }}</b></br>
+{% endfor %}
+
+
+</body>
+
+
+</html>
+
